@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ikl-cq-3zD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Modal View Controller-->
+        <scene sceneID="koB-7Y-RZf">
+            <objects>
+                <viewController id="Ikl-cq-3zD" customClass="ModalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bvI-OI-788"/>
+                        <viewControllerLayoutGuide type="bottom" id="m21-bl-Hn7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g8H-0i-rX5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73e-ZD-sCL">
+                                <rect key="frame" x="0.0" y="273" width="600" height="55"/>
+                                <color key="backgroundColor" red="0.49341354929999998" green="0.87616902370000005" blue="0.50450501820000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="iwr-Ll-WlS"/>
+                                </constraints>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="Ikl-cq-3zD" eventType="touchUpInside" id="4zb-Qm-sqP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="73e-ZD-sCL" secondAttribute="trailing" id="1Rh-SP-lWc"/>
+                            <constraint firstAttribute="centerY" secondItem="73e-ZD-sCL" secondAttribute="centerY" id="49g-ze-19X"/>
+                            <constraint firstItem="73e-ZD-sCL" firstAttribute="leading" secondItem="g8H-0i-rX5" secondAttribute="leading" id="MWF-Au-XHL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wkt-7q-npB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="252"/>
+        </scene>
+    </scenes>
+</document>
